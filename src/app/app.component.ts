@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Tp1Angular';
+  seance = 'Seance TP1';
+  resume = 'Prise en main d\'Angular, première séance';
+  isAuth : boolean = false;
+  
+  constructor() { 
+      setTimeout( () =>{this.isAuth = true;}, 10000);
+  }
 }
